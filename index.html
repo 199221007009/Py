@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Presentations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background: url('./img/bg-show.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+            color: rgb(9, 9, 9);
+            text-overflow: ellipsis;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            gap: 20px;
+            padding: 10px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 500px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+        .item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .item:hover img {
+            transform: scale(1.1);
+        }
+        .floating-image {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            background: url('floating.png') no-repeat center;
+            background-size: contain;
+            animation: float 5s infinite alternate ease-in-out;
+        }
+        @keyframes float {
+            from {
+                transform: translate(0, 0);
+            }
+            to {
+                transform: translate(30px, 30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1> My Presentations </h1>
+    <div class="container">
+        <a href="https://www.canva.com/design/DAFuw0Euul0/0rWJYx9vesJQp9_5JTy0fQ/view?utm_content=DAFuw0Euul0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h92a65428d3" class="item" target="_blank">
+            <img src="./img/python.png" alt="Python">
+            <span>Python</span>
+        </a>
+        <a href="https://www.canva.com/design/DAFu0FlPOTA/Ya6MdursgVgxoDHBLrKZAA/view?utm_content=DAFu0FlPOTA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h80338d356b" class="item" target="_blank">
+            <img src="./img/data-cleansing.png" alt="Oops">
+            <span>Oops</span>
+        </a>
+        <a href="https://www.canva.com/design/DAGfbzNOm9A/QHxiQg1MY7hSgmK5ttfq9A/view?utm_content=DAGfbzNOm9A&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc9157cdd1b" class="item" target="_blank">
+            <img src="./img/growth-chart.png" alt="Python Quiz">
+            <span>Python Quiz</span>
+        </a>
+        <a href="https://www.canva.com/design/DAGfh3vFn0M/a65pan3e_2PvHK8VxpKcyA/edit?utm_content=DAGfh3vFn0M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="item" target="_blank">
+            <img src="./img/user-folder.png" alt="Python Quiz Edit">
+            <span>Python Quiz</span>
+        </a>
+    </div>
+    <div class="floating-image"></div>
+</body>
+</html>
